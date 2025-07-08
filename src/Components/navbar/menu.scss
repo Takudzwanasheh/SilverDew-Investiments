@@ -1,0 +1,136 @@
+$primary-color: #007bff; // Primary color
+$background-color: #f8f9fa; // Light background
+$text-color: #333; // Default text color
+
+.navigationbar {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color;
+	padding: 10px 20px;
+	transition: top 0.3s;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+	.CompanyLogos {
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 5rem; // Adjust logo size as needed
+			height: auto;
+			border-radius: 50%; // Optional: rounded corners for the logo
+			margin-right: 10px; // Space between logo and text
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+			font-size: 0.9rem;
+			text-align: center;
+		}
+	}
+
+	.mainPages {
+		display: flex;
+		align-items: center;
+		margin-right: 1.5rem;
+		.nav-link {
+			text-decoration: none;
+			color: $text-color;
+			margin: 0 15px;
+			padding: 0.2rem 0.3rem;
+
+			&:hover {
+				background-color: lighten($color: $primary-color, $amount: 10%);
+			}
+		}
+
+		.Dropdown {
+			position: relative;
+
+			.MenuButton {
+				background-color: $primary-color;
+				color: white;
+				padding: 10px 15px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+
+				&:hover {
+					background-color: darken($primary-color, 10%); // Darken on hover
+				}
+			}
+
+			.Menu {
+				display: none; // Hide menu by default
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background-color: white;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				z-index: 10;
+
+				.MenuItem {
+					.menu-link {
+						text-decoration: none;
+						color: $text-color;
+						display: block;
+						padding: 10px 15px;
+
+						&:hover {
+							background-color: $primary-color;
+							color: white;
+						}
+					}
+				}
+			}
+
+			&:hover .Menu {
+				display: block; // Show menu on hover
+			}
+		}
+		a {
+			margin-left: 0.5rem;
+		}
+	}
+}
+
+.Menu {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+
+	.MenuItem {
+		margin: 5px 0;
+
+		.menu-link {
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			color: $text-color;
+			width: 100%;
+			padding: 10px;
+
+			&:hover {
+				background-color: $primary-color;
+				color: white;
+			}
+		}
+	}
+}

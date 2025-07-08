@@ -1,0 +1,90 @@
+// Base breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+.navigationbar {
+	flex-wrap: wrap;
+
+	.CompanyLogos {
+		flex-direction: row;
+		.hamburger {
+			display: none;
+		}
+
+		h1 {
+			font-size: 1.2rem;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+	}
+	.hideMenu {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem;
+		gap: 1rem;
+
+		.nav-link {
+			text-decoration: none;
+		}
+		.dropdown {
+			background-color: blue;
+		}
+	}
+	.mainPages {
+		display: flex;
+	}
+	.mainPages {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+
+	@media (max-width: $breakpoint-md) {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+
+		.CompanyLogos {
+			flex-direction: row;
+			margin-bottom: 10px;
+
+			.hamburger {
+				display: flex;
+				padding: 2rem;
+				margin-right: 1rem;
+				font-size: 2.5rem !important;
+			}
+		}
+		.hideMenu {
+			display: none;
+		}
+		.mainPages {
+			flex-direction: column;
+			width: 100%;
+			margin: 0;
+
+			.nav-link,
+			.MenuButton {
+				width: 100%;
+				text-align: left;
+				margin: 5px 0;
+			}
+
+			.Dropdown {
+				width: 100%;
+
+				.Menu {
+					position: relative;
+					width: 100%;
+
+					.MenuItem .menu-link {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

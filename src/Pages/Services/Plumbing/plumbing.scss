@@ -1,0 +1,280 @@
+.plumb-container {
+	display: flex;
+	flex-direction: column;
+	background: gray;
+
+	.top {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: white;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		div {
+			display: flex;
+			align-items: center;
+
+			span {
+				font-size: 1.2rem;
+			}
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		div {
+			display: flex;
+			gap: 0.5rem;
+			.divider {
+				background-color: gold;
+				width: 0.12rem;
+				height: 2rem;
+			}
+			span {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.AboutCompany {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.3rem;
+		flex-wrap: wrap;
+		img {
+			width: 5rem;
+			border-radius: 50%;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			color: wheat;
+			h1 {
+				font-size: 1.5rem;
+			}
+			span {
+				text-align: center;
+				margin-top: -0.5rem;
+			}
+		}
+	}
+
+	.bottom {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem;
+		div {
+			margin-left: 1rem;
+			color: wheat;
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+			a {
+				color: wheat;
+				text-decoration: none;
+				font-size: 1.5rem;
+				cursor: pointer;
+
+				&:hover {
+					cursor: pointer;
+					color: skyblue;
+				}
+			}
+		}
+		.icon {
+			margin-right: 1rem;
+			color: white !important;
+
+			&:hover {
+				cursor: pointer;
+				color: skyblue !important;
+			}
+		}
+	}
+
+	.roadconstructios {
+		height: 20rem;
+		display: flex;
+		justify-content: space-between;
+		color: white;
+		align-items: center;
+		background-image: url("https://t3.ftcdn.net/jpg/07/55/90/32/360_F_755903227_3d8X6SxpjiLn9d373WuHC2lhpKIJ9VRV.jpg");
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		background-repeat: no-repeat;
+		flex-wrap: wrap;
+		padding: 1rem;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 0;
+		}
+		.first-section,
+		.text,
+		.buttons,
+		img,
+		div {
+			position: relative;
+			z-index: 1;
+		}
+		.left {
+			h1 {
+				font-size: 3rem;
+			}
+		}
+		.right {
+			display: flex;
+			align-items: center;
+			margin-right: 2rem;
+
+			img {
+				width: 5rem;
+				border-radius: 50%;
+			}
+			div {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					text-align: center;
+					margin-top: -1rem;
+				}
+			}
+		}
+	}
+
+	// Responsive styles
+	@media (max-width: 1024px) {
+		.bottom,
+		.roadconstructios {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 1rem;
+		}
+		.roadconstructios {
+			height: auto;
+			padding: 2rem 1rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.plumb-container .top {
+			display: none;
+		}
+		.bottom,
+		.roadconstructios,
+		.AboutCompany {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 1rem;
+		}
+		.roadconstructios {
+			height: auto;
+			padding: 2rem 0.5rem;
+			.left h1 {
+				font-size: 2rem;
+			}
+			.right {
+				margin-right: 0;
+				img {
+					width: 4rem;
+				}
+			}
+		}
+		.AboutCompany img {
+			width: 4rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.plumb-container .top {
+			display: none;
+		}
+		.bottom,
+		.AboutCompany {
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: flex-start;
+			gap: 0.5rem;
+		}
+		.roadconstructios {
+			padding: 1rem 0.2rem;
+			.left h1 {
+				font-size: 1.2rem;
+			}
+			.right img {
+				width: 3rem;
+			}
+		}
+		.AboutCompany img {
+			width: 3rem;
+		}
+	}
+}
+
+.image-container {
+	margin-left: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	gap: 1rem;
+	color: wheat;
+	flex-wrap: wrap;
+
+	.project {
+		border: 1px dotted black;
+		padding: 0.4rem;
+		color: wheat;
+		width: 100%;
+		max-width: 22rem;
+		box-sizing: border-box;
+		div {
+			display: flex;
+			img {
+				width: 100%;
+				max-width: 20rem;
+				height: auto;
+				max-height: 15rem;
+				object-fit: cover;
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		margin-left: 0.5rem;
+		gap: 0.5rem;
+		.project {
+			max-width: 18rem;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: stretch;
+		margin-left: 0;
+		padding: 0.5rem;
+		.project {
+			max-width: 100%;
+		}
+	}
+	@media (max-width: 480px) {
+		padding: 0.2rem;
+		gap: 0.2rem;
+		.project {
+			padding: 0.2rem;
+		}
+	}
+}

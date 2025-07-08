@@ -1,0 +1,148 @@
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	background-color: navy;
+	justify-content: space-evenly;
+
+	.fisrt {
+		color: white;
+		display: flex;
+		flex: 1;
+		gap: 0.5rem;
+		justify-content: space-between;
+
+		.details {
+			display: flex;
+			flex-direction: column;
+			.top {
+				display: flex;
+				align-items: center;
+				margin-top: 0.5rem;
+				gap: 0.2rem;
+				img {
+					width: 3rem;
+					border-radius: 50%;
+				}
+				span {
+					font-size: 1.2rem;
+					font-weight: 500;
+				}
+			}
+
+			.links {
+				display: flex;
+				gap: 1.5rem;
+				margin-top: 1rem;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.second {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1rem;
+		span {
+			font-size: 1.3rem;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+
+	.last {
+		margin-right: 1rem;
+		margin-top: 1rem;
+		span {
+			font-size: 1.3rem;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		div {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.bottom {
+		background-color: gold;
+		span {
+			font-size: 1.2rem;
+			padding: 0.5rem;
+			margin: 0.2rem;
+		}
+	}
+
+	// Responsive styles
+	@media (max-width: 1024px) {
+		.fisrt {
+			gap: 0.3rem;
+			.details .links {
+				gap: 1rem;
+			}
+		}
+		.second span,
+		.last span {
+			font-size: 1.1rem;
+		}
+		.bottom span {
+			font-size: 1rem;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.fisrt {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+		.details .top img {
+			width: 2.5rem;
+		}
+		.details .top span {
+			font-size: 1rem;
+		}
+		.details .links {
+			flex-direction: column;
+			gap: 0.7rem;
+		}
+		.second,
+		.last {
+			margin-top: 0.7rem;
+		}
+		.second span,
+		.last span {
+			font-size: 1rem;
+		}
+		.bottom span {
+			font-size: 0.95rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		justify-content: center;
+		padding: 0.5rem;
+		.fisrt,
+		.second,
+		.last {
+			margin-right: 0;
+			margin-top: 0.5rem;
+		}
+		.details .top img {
+			width: 2rem;
+		}
+		.details .top span {
+			font-size: 0.95rem;
+		}
+		.second span,
+		.last span {
+			font-size: 0.9rem;
+		}
+		.bottom span {
+			font-size: 0.85rem;
+			padding: 0.3rem;
+		}
+	}
+}

@@ -1,0 +1,274 @@
+.house-container {
+	display: flex;
+	flex-direction: column;
+	background: gray;
+
+	.top {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: white;
+		flex-wrap: wrap;
+
+		div {
+			display: flex;
+			align-items: center;
+
+			span {
+				font-size: 1.2rem;
+			}
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		div {
+			display: flex;
+			gap: 0.5rem;
+			.divider {
+				background-color: gold;
+				width: 0.12rem;
+				height: 2rem;
+			}
+			span {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.AboutCompany {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.3rem;
+		flex-wrap: wrap;
+		img {
+			width: 5rem;
+			border-radius: 50%;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			color: wheat;
+			h1 {
+				font-size: 1.5rem;
+			}
+			span {
+				text-align: center;
+				margin-top: -0.5rem;
+			}
+		}
+	}
+
+	.bottom {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem;
+		div {
+			margin-left: 1rem;
+			color: wheat;
+			align-items: center;
+			display: flex;
+			gap: 2rem;
+			a {
+				color: wheat;
+				text-decoration: none;
+				font-size: 1.5rem;
+				cursor: pointer;
+
+				&:hover {
+					cursor: pointer;
+					color: skyblue;
+				}
+			}
+		}
+		.icon {
+			margin-right: 1rem;
+			color: white !important;
+
+			&:hover {
+				cursor: pointer;
+				color: skyblue !important;
+			}
+		}
+	}
+
+	.roadconstructios {
+		height: 20rem;
+		display: flex;
+		justify-content: space-between;
+		color: white;
+		align-items: center;
+		background-image: url("https://media.istockphoto.com/id/1471363410/photo/engineer-people-meeting-working-in-office-for-discussing-engineering-hands-of-engineer.jpg?s=612x612&w=0&k=20&c=rj8NFGHLTxQQI_dI4if9VmuZoLYKTkMBMKLYJHLdP90=");
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		background-repeat: no-repeat;
+		flex-wrap: wrap;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 0;
+		}
+		.first-section,
+		.text,
+		.buttons,
+		img,
+		div {
+			position: relative;
+			z-index: 1;
+		}
+		.left {
+			h1 {
+				font-size: 3rem;
+			}
+		}
+		.right {
+			display: flex;
+			align-items: center;
+			margin-right: 2rem;
+
+			img {
+				width: 5rem;
+				border-radius: 50%;
+			}
+			div {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					text-align: center;
+					margin-top: -1rem;
+				}
+			}
+		}
+	}
+	.details-container {
+		display: flex;
+		flex-direction: column;
+
+		.road-repair {
+			display: flex;
+			justify-content: space-evenly;
+			div {
+				flex: 1;
+				padding: 0.5rem;
+				display: flex;
+				flex-direction: column;
+				h1 {
+					padding: 0.2rem;
+					font-size: 1.4rem;
+				}
+				p {
+					padding: 0.2rem;
+				}
+			}
+			div {
+				flex: 1;
+				flex-direction: column;
+				ul {
+					li {
+						font-size: 1.2rem;
+						padding: 0.2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+	.house-container .roadconstructios {
+		height: 15rem;
+	}
+}
+
+@media (max-width: 900px) {
+	.house-container .top {
+		display: none;
+		gap: -1rem;
+	}
+	.house-container .bottom {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+	.house-container .bottom div .button {
+		margin-left: -0.7rem;
+	}
+	.house-container .roadconstructios .right div h1 {
+		font-size: 1rem;
+		font-weight: bolder;
+	}
+	.house-container .roadconstructios {
+		margin: 0.5rem;
+		flex-direction: row;
+		height: auto;
+		padding: 1rem 0;
+	}
+	.house-container .roadconstructios .left h1 {
+		font-size: 2rem;
+	}
+	.house-container .roadconstructios .right {
+		margin-right: 0;
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.house-container .top {
+		display: none;
+		gap: -1rem;
+	}
+	.house-container {
+		padding: 0.5rem;
+	}
+	.house-container .top {
+		display: none;
+	}
+	.house-container .bottom div {
+		width: 95%;
+		gap: 0.5rem;
+
+		a {
+			font-size: 1.2rem;
+		}
+	}
+
+	.house-container .AboutCompany img,
+	.house-container .roadconstructios .right img {
+		width: 3.5rem;
+	}
+	.house-container .top {
+		display: none;
+	}
+	.house-container .AboutCompany div h1 {
+		font-size: 1.2rem;
+	}
+	.house-container .roadconstructios {
+		padding: 0.5rem 0;
+	}
+	.house-container .roadconstructios .left h1 {
+		font-size: 1.5rem;
+	}
+	.image-container {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.image-container .project div {
+		width: 90%;
+	}
+	.image-container .project div img {
+		width: 50%;
+		height: 6rem;
+	}
+}
