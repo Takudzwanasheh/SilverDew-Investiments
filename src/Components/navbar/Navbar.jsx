@@ -1,20 +1,13 @@
 import React from "react";
-import Dropdown from "@mui/joy/Dropdown";
-import Menu from "@mui/joy/Menu";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuButton from "@mui/joy/MenuButton";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import MenuItem from "@mui/joy/MenuItem";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import silverdale from "../../Asserts/sliverDew.png";
 import DropdownMenu from "./menu";
-import PositionedMenu from "./MainMenu";
+
 export default function Navbar() {
 	const [showMenu, setShowMenu] = React.useState(false);
 
-	// Close menu when clicking outside
 	const navRef = React.useRef(null);
 
 	return (

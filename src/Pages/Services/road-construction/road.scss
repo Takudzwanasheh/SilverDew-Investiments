@@ -1,4 +1,7 @@
 .container {
+	display: flex;
+	flex-direction: column;
+	background: gray;
 	.bottom {
 		nav {
 			display: flex;

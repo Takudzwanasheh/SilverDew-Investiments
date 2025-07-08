@@ -1,64 +1,5 @@
 .plumb-container {
-	display: flex;
-	flex-direction: column;
 	background: gray;
-
-	.top {
-		display: flex;
-		align-items: center;
-		justify-content: space-evenly;
-		color: white;
-		flex-wrap: wrap;
-		gap: 1rem;
-
-		div {
-			display: flex;
-			align-items: center;
-
-			span {
-				font-size: 1.2rem;
-			}
-		}
-		p {
-			font-size: 1.2rem;
-		}
-		div {
-			display: flex;
-			gap: 0.5rem;
-			.divider {
-				background-color: gold;
-				width: 0.12rem;
-				height: 2rem;
-			}
-			span {
-				font-size: 1.2rem;
-			}
-		}
-	}
-
-	.AboutCompany {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.3rem;
-		flex-wrap: wrap;
-		img {
-			width: 5rem;
-			border-radius: 50%;
-		}
-		div {
-			display: flex;
-			flex-direction: column;
-			color: wheat;
-			h1 {
-				font-size: 1.5rem;
-			}
-			span {
-				text-align: center;
-				margin-top: -0.5rem;
-			}
-		}
-	}
 
 	.bottom {
 		margin-top: 1rem;
@@ -83,15 +24,6 @@
 					cursor: pointer;
 					color: skyblue;
 				}
-			}
-		}
-		.icon {
-			margin-right: 1rem;
-			color: white !important;
-
-			&:hover {
-				cursor: pointer;
-				color: skyblue !important;
 			}
 		}
 	}
@@ -153,6 +85,68 @@
 			}
 		}
 	}
+	.details-container {
+		display: flex;
+		flex-direction: column;
+		.image-container {
+			display: flex;
+			flex-direction: row;
+			img {
+				width: 20rem;
+				height: 20rem;
+			}
+		}
+		.divider {
+			height: 1px;
+			justify-content: center;
+			width: 98%;
+			background-color: yellow;
+		}
+		.road-repair {
+			display: flex;
+
+			.top {
+				flex: 1.5;
+				display: flex;
+				flex-direction: column;
+				padding: 0 0.5rem;
+				p {
+					font-size: 1.5rem;
+				}
+			}
+			.bottom {
+				margin-left: 1rem;
+				flex: 1;
+
+				li {
+					padding: 0.5rem;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.road {
+			margin-top: 1rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			div {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				margin-left: 1rem;
+
+				p {
+					text-align: left;
+					font-size: 1.5rem;
+				}
+			}
+			img {
+				flex: 1;
+				width: 90%;
+				margin: 0.5rem;
+			}
+		}
+	}
 
 	// Responsive styles
 	@media (max-width: 1024px) {
@@ -173,8 +167,10 @@
 		.plumb-container .top {
 			display: none;
 		}
-		.bottom,
-		.roadconstructios,
+		.bottom {
+			display: none;
+		}
+
 		.AboutCompany {
 			flex-direction: column;
 			align-items: flex-start;
