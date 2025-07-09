@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../Components/navbar/Navbar";
 import FirstSection from "../../Components/home-compnents/first-section/First-seection";
 import Second from "../../Components/home-compnents/second-section/Second";
 import "./home.scss";

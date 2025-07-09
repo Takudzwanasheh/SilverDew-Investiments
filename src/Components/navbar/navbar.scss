@@ -24,10 +24,15 @@ $breakpoint-lg: 992px;
 		display: flex;
 		align-items: center;
 		padding: 0.5rem;
+		margin-right: 1rem;
 		gap: 1rem;
 
 		.nav-link {
 			text-decoration: none;
+			padding: 0 1rem;
+			p {
+				color: black;
+			}
 		}
 		.dropdown {
 			background-color: blue;

@@ -27,9 +27,10 @@ export default function Navbar() {
 				<NavLink to='/' className='nav-link'>
 					<p>HOME</p>
 				</NavLink>
+
 				<DropdownMenu className='dropdown' />
 
-				<NavLink to='/about-us' className='nav-link'>
+				<NavLink to='/about-us' className=' nav-link'>
 					<p>ABOUT US</p>
 				</NavLink>
 				<NavLink to='/contact-us' className='nav-link'>

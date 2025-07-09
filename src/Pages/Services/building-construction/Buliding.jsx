@@ -1,8 +1,5 @@
 import React from "react";
-import MailIcon from "@mui/icons-material/Mail";
-import silverdale from "../../../Asserts/sliverDew.png";
 import construct from "../../../Asserts/construction.png";
-import { Search } from "@mui/icons-material";
 import "./building.scss";
 import { NavLink } from "react-router-dom";
 import LastSection from "../../../Components/home-compnents/last-section/LastSection";
@@ -18,7 +15,9 @@ export default function Building() {
 			<div className='bottom'>
 				<div>
 					<NavLink to='/'>Home</NavLink>
-					<NavLink to='/about'>About</NavLink>
+					<NavLink className='disapear ' to='/about'>
+						About
+					</NavLink>
 					<NavLink className='button'>
 						<DropdownMenu />
 					</NavLink>

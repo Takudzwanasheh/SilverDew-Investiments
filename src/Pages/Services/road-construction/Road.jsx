@@ -1,6 +1,4 @@
 import React from "react";
-import MailIcon from "@mui/icons-material/Mail";
-import silverdale from "../../../Asserts/sliverDew.png";
 import construct from "../../../Asserts/roadwork.png";
 import "./road.scss";
 import { NavLink } from "react-router-dom";

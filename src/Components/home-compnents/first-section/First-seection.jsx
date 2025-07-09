@@ -1,12 +1,9 @@
 import React from "react";
-import { Mail, Search, KeyboardArrowDown } from "@mui/icons-material";
-import silverdale from "../../../Asserts/sliverDew.png";
 
 import "./first.scss";
 import { NavLink } from "react-router-dom";
-import Second from "../second-section/Second";
 import DropdownMenu from "../../navbar/menu";
-
+import Top from "../../../Pages/Services/building-construction/Top";
 export default function FirstSection() {
 	const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -27,25 +24,10 @@ export default function FirstSection() {
 	}, [services.length]);
 
 	return (
-		<div className='container'>
+		<div style={{ background: "lightgrey" }} className='container'>
+			<Top />
 			<div className='first-section'>
-				<div className='AboutCompany'>
-					<img src={silverdale} alt='Company Logo' />
-					<div>
-						<h1>SILVER DEW INVESTMENTS</h1>
-						<span>(PRIVATE) LIMITED</span>
-					</div>
-				</div>
-
 				<div className='ContactDetails'>
-					<div className='top'>
-						<div>
-							<Mail className='icon' />
-							<span>takudzwanashe@gmail.com</span>
-						</div>
-						<p>+263 781044370</p>
-						<p> Safety First Everyday</p>
-					</div>
 					<div className='bottom'>
 						<NavLink to='/'>Home</NavLink>
 						<DropdownMenu className='button' />
@@ -80,7 +62,13 @@ export default function FirstSection() {
 			</div>
 
 			<div className='buttons'>
-				<button>LEARN MORE</button>
+				<a
+					href='https://advancedct.com/due-diligence-why-it-matters-how-to-tackle-it/'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<button>LEARN MORE</button>
+				</a>
 			</div>
 		</div>
 	);

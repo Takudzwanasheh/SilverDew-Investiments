@@ -1,7 +1,9 @@
 $primary-color: #007bff; // Primary color
 $background-color: #f8f9fa; // Light background
 $text-color: #333; // Default text color
-
+.active {
+	background-color: rgb(191, 181, 157);
+}
 .navigationbar {
 	position: fixed;
 	top: 0;
@@ -59,7 +61,6 @@ $text-color: #333; // Default text color
 			.MenuButton {
 				background-color: $primary-color;
 				color: white;
-				padding: 10px 15px;
 				border: none;
 				border-radius: 5px;
 				cursor: pointer;

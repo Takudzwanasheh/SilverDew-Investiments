@@ -4,6 +4,7 @@ import paving from "../../../Asserts/dreveway.png";
 import road from "../../../Asserts/Road.png";
 import dams from "../../../Asserts/dams.png";
 import plumbing from "../../../Asserts/plumbing.png";
+import { NavLink } from "react-router-dom";
 import "./second.scss";
 
 export default function Second() {
@@ -35,27 +36,29 @@ export default function Second() {
 						cover all aspects of your project, right from recognising your
 						vision through delivering an excellent project
 					</p>
-					<button>SEE ALL SERVICES</button>
+					<NavLink to={"/building-construction"}>
+						<button>SEE ALL SERVICES</button>
+					</NavLink>
 				</div>
 				<div className='right-container'>
 					<div className='right'>
 						<div className='services'>
-							<img src={dam} />
+							<img alt='Dam construction' src={dam} />
 						</div>
 						<div className='services'>
-							<img src={paving} />{" "}
+							<img alt='Drive way paving' src={paving} />{" "}
 						</div>
 						<div className='services'>
-							<img src={road} />{" "}
+							<img alt='Road construction' src={road} />{" "}
 						</div>
 						<div className='services'>
-							<img src={dams} />{" "}
+							<img alt='Dam' src={dams} />{" "}
 						</div>
 						<div className='services'>
-							<img src={plumbing} />{" "}
+							<img alt='Best Plumbing' src={plumbing} />{" "}
 						</div>
 						<div className='services'>
-							<img src={dam} />{" "}
+							<img alt='Dam' src={dam} />{" "}
 						</div>
 					</div>
 				</div>

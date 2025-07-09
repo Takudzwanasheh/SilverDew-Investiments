@@ -9,9 +9,11 @@ export default function Top() {
 			<div style={{ gap: "1rem" }} className='top'>
 				<div className='contact-info'>
 					<MailIcon />
-					<span>info@kardiaholdings.co.zw</span>
+					<span>silverdewinvestments@gmail.com</span>
 				</div>
-				<p>+263.774.831.073</p>
+				<p>+263 772 839 241</p>
+				<p>+263 719 639 241</p>
+				<p>+263 772 625 855</p>
 				<div className='safety-message'>
 					<div className='divider' />
 					<span>Safety First Everyday</span>

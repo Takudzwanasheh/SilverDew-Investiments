@@ -63,7 +63,7 @@
 		margin-top: 1rem;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 1rem;
 		div {
@@ -72,6 +72,10 @@
 			align-items: center;
 			display: flex;
 			gap: 2rem;
+			.button {
+				display: flex;
+				width: fit-contents;
+			}
 			a {
 				color: wheat;
 				text-decoration: none;
@@ -203,7 +207,10 @@
 		gap: 0.5rem;
 	}
 	.house-container .bottom div .button {
-		margin-left: -0.7rem;
+		margin-left: 0;
+		align-items: center;
+		display: flex;
+		width: fit-content;
 	}
 	.house-container .roadconstructios .right div h1 {
 		font-size: 1rem;
@@ -235,8 +242,13 @@
 	.house-container .top {
 		display: none;
 	}
+	.house-container .bottom .disapear {
+		display: none;
+	}
 	.house-container .bottom div {
-		width: 95%;
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
 		gap: 0.5rem;
 
 		a {

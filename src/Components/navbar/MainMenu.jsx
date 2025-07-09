@@ -51,7 +51,7 @@ export default function PositionedMenu() {
 					<DropdownMenu />
 				</MenuItem>
 				<MenuItem onClick={handleClose}>
-					<NavLink to='/about-us' className='nav-link'>
+					<NavLink to='/about-us' className='disapear nav-link'>
 						<p>ABOUT US</p>
 					</NavLink>
 				</MenuItem>

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Asserts/sliverDew.png";
+import CallIcon from "@mui/icons-material/Call";
 import { NavLink } from "react-router-dom";
 import {
 	Facebook,
@@ -7,6 +8,7 @@ import {
 	YouTube,
 	X,
 	LocationOn,
+	WhatsApp,
 } from "@mui/icons-material";
 
 import "./footer.scss";
@@ -21,6 +23,7 @@ export default function Footer() {
 
 						<span>Silver Dew Investments Pvt Ltd</span>
 					</div>
+					<span>silverdewinvestments@gmail.com</span>
 					<p>
 						Our mission is to provide superior construction services <br /> to
 						our trusted partners in a safe environment for our <br /> supporting
@@ -43,29 +46,35 @@ export default function Footer() {
 				</div>
 				<div className='second'>
 					<span>Quick Links</span>
-					<p>Dam construction </p>
-					<p>Road construction </p>
-					<p>Building </p>
-					<p>Warehouses </p>
+					<NavLink to={"/plumbing-zw"}>
+						<p>Plumbing </p>
+					</NavLink>
+					<NavLink to={"/road-construction.zw"}>
+						<p>Road construction </p>
+					</NavLink>
+					<NavLink to={"/building-construction"}>
+						<p>Building </p>
+					</NavLink>
 				</div>
 				<div className='last'>
 					<span>Our Addresses</span>
 					<div className='items'>
 						<LocationOn />
 						<p>
-							6556-170 Street Westlea <br /> Industry Area, Harare, Zimbabwe
+							No. 14947 Tynwald South
+							<br /> Harare, Zimbabwe
 						</p>
 					</div>
 					<div className='items'>
-						<LocationOn />
+						<CallIcon />
 						<p>
-							6556-170 Street Westlea <br /> Industry Area, Harare, Zimbabwe
+							Cell: 0772 839 241 <br />
 						</p>
 					</div>
 					<div className='items'>
-						<LocationOn />
+						<WhatsApp />
 						<p>
-							6556-170 Street Westlea <br /> Industry Area, Harare, Zimbabwe
+							0719 639 241 <br /> 0772 625 855
 						</p>
 					</div>
 				</div>
