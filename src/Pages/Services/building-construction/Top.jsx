@@ -11,6 +11,7 @@ export default function Top() {
 					<MailIcon />
 					<span>silverdewinvestments@gmail.com</span>
 				</div>
+
 				<p>+263 772 839 241</p>
 				<p>+263 719 639 241</p>
 				<p>+263 772 625 855</p>
@@ -19,7 +20,7 @@ export default function Top() {
 					<span>Safety First Everyday</span>
 				</div>
 			</div>
-			<div className='AboutCompany'>
+			<div style={{ display: "flex" }} className='AboutCompany'>
 				<img src={silverdale} alt='Company Logo' />
 				<div>
 					<h1>SILVER DEW INVESTMENTS</h1>

@@ -14,9 +14,7 @@ export default function Road() {
 				<nav>
 					<NavLink to='/'>Home</NavLink>
 					<NavLink to='/about'>About</NavLink>
-					<NavLink className='button'>
-						<DropdownMenu />
-					</NavLink>
+					<DropdownMenu />
 					<NavLink to='/contact-us'>Contact Us</NavLink>
 				</nav>
 			</div>

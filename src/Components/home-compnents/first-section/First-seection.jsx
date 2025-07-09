@@ -29,10 +29,16 @@ export default function FirstSection() {
 			<div className='first-section'>
 				<div className='ContactDetails'>
 					<div className='bottom'>
-						<NavLink to='/'>Home</NavLink>
+						<NavLink className='contactus' to='/'>
+							Home
+						</NavLink>
 						<DropdownMenu className='button' />
-						<NavLink to='/about-us'>About</NavLink>
-						<NavLink to='/contact-us'>Contact Us</NavLink>
+						<NavLink className='drop' to='/about-us'>
+							About
+						</NavLink>
+						<NavLink className='contactus' to='/contact-us'>
+							Contact Us
+						</NavLink>
 					</div>
 				</div>
 			</div>

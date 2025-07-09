@@ -180,7 +180,14 @@
 				font-size: 1.5rem;
 			}
 			.ContactDetails {
-				display: none;
+				display: flex;
+
+				.botto {
+					display: flex;
+					.drop {
+						display: none;
+					}
+				}
 			}
 			.ContactDetails .bottom a {
 				font-size: 1.2rem;
@@ -241,7 +248,15 @@
 			}
 
 			.ContactDetails .bottom {
-				display: none;
+				display: flex;
+				width: 100%;
+
+				.drop {
+					display: none;
+				}
+				.contactus {
+					font-size: 1rem;
+				}
 			}
 		}
 		.text {

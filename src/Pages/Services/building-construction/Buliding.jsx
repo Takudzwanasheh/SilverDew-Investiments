@@ -18,10 +18,10 @@ export default function Building() {
 					<NavLink className='disapear ' to='/about'>
 						About
 					</NavLink>
-					<NavLink className='button'>
-						<DropdownMenu />
+					<DropdownMenu />
+					<NavLink className='disapear ' to='/contact-us'>
+						Contact Us
 					</NavLink>
-					<NavLink to='/contact-us'>Contact Us</NavLink>
 				</div>
 			</div>
 			<div className='roadconstructios'>

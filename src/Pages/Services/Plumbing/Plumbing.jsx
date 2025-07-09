@@ -12,12 +12,14 @@ export default function Plumbing() {
 			<div className='bottom'>
 				<div>
 					<NavLink to='/'>Home</NavLink>
-					<NavLink to='/about'>About</NavLink>
-					<NavLink className='button'>
-						<DropdownMenu />
+					<NavLink className='disapear' to='/about'>
+						About
 					</NavLink>
+					<DropdownMenu />
 
-					<NavLink to='/contact-us'>Contact Us</NavLink>
+					<NavLink className='disapear ' to='/contact-us'>
+						Contact Us
+					</NavLink>
 				</div>
 			</div>
 
@@ -60,11 +62,12 @@ export default function Plumbing() {
 					</div>
 					<div className='bottom'>
 						<h1>Services we offer:</h1>
-
-						<li> Main line water service repairs</li>
-						<li> Cracked and broken pipe repairs</li>
-						<li> Toilet repairs and installation</li>
-						<li> Water heater installation and service</li>
+						<ul>
+							<li> Main line water service repairs</li>
+							<li> Cracked and broken pipe repairs</li>
+							<li> Toilet repairs and installation</li>
+							<li> Water heater installation and service</li>
+						</ul>
 					</div>
 				</div>
 				<div className='divider' />

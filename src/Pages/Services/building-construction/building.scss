@@ -65,7 +65,7 @@
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: 0.5rem;
 		div {
 			margin-left: 1rem;
 			color: wheat;
@@ -204,7 +204,6 @@
 	.house-container .bottom {
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 0.5rem;
 	}
 	.house-container .bottom div .button {
 		margin-left: 0;
