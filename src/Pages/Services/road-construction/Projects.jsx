@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { projectsData } from "./date";
 import axios from "axios";
 import "./project.scss";
 
@@ -9,7 +8,7 @@ export default function Projects() {
 
 	useEffect(() => {
 		axios
-			.get("https://siverdewinvestments-5c42fdd5e7e0.herokuapp.com/building")
+			.get("https://siverdewinvestments-5c42fdd5e7e0.herokuapp.com/road")
 			.then((response) => {
 				setProjects(response.data);
 			});

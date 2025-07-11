@@ -9,6 +9,7 @@ import Building from "./Pages/Services/building-construction/Buliding";
 import Plumbing from "./Pages/Services/Plumbing/Plumbing";
 import About from "./Pages/about/about/About";
 import UserInfo from "./Pages/ContactDetails/UserInfo";
+import UpladProjects from "./Components/ContactDetails/UserInfo";
 function App() {
 	const [showNavbar, setShowNavbar] = React.useState(false);
 
@@ -34,6 +35,7 @@ function App() {
 				<Route path='/plumbing-zw' element={<Plumbing />} />
 				<Route path='/about-us' element={<About />} />
 				<Route path='/contact-us' element={<UserInfo />} />
+				<Route path='/admin' element={<UpladProjects />} />
 			</Routes>
 			<Footer />
 		</Router>

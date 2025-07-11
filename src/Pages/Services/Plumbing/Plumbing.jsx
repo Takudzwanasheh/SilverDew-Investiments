@@ -17,7 +17,7 @@ export default function Plumbing() {
 					</NavLink>
 					<DropdownMenu />
 
-					<NavLink className='disapear ' to='/contact-us'>
+					<NavLink className=' ' to='/contact-us'>
 						Contact Us
 					</NavLink>
 				</div>
@@ -39,14 +39,16 @@ export default function Plumbing() {
 			<div className='details-container'>
 				<div className='image-container'>
 					<h1>Let us fix it for you</h1>
-					<img
-						src='https://www.drainmenplumbing.com/site/wp-content/uploads/75949260_s.jpg'
-						alt='plumbing'
-					/>
-					<img
-						src='https://www.oatey.com/sites/default/files/2022-10/P-Trap_Blog_05.jpg'
-						alt='plumbing'
-					/>
+					<div>
+						<img
+							src='https://www.drainmenplumbing.com/site/wp-content/uploads/75949260_s.jpg'
+							alt='plumbing'
+						/>
+						<img
+							src='https://www.oatey.com/sites/default/files/2022-10/P-Trap_Blog_05.jpg'
+							alt='plumbing'
+						/>
+					</div>
 				</div>
 				<div className='divider' />
 				<div className='road-repair'>

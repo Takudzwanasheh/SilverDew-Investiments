@@ -4,6 +4,7 @@ import "./navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import silverdale from "../../Asserts/sliverDew.png";
 import DropdownMenu from "./menu";
+import Drop from "./Dropdown";
 
 export default function Navbar() {
 	const [showMenu, setShowMenu] = React.useState(false);
@@ -18,12 +19,11 @@ export default function Navbar() {
 					<h1>SILVER DEW INVESTMENTS</h1>
 					<p>(P R I V A T E) L I M I T E D</p>
 				</div>
-				<MenuIcon
-					className='hamburger'
-					onClick={() => setShowMenu(!showMenu)}
-				/>
+				<div className='hamburger' onClick={() => setShowMenu(!showMenu)}>
+					<Drop />
+				</div>
 			</div>
-			<div className={showMenu ? "mainPages" : "hideMenu"}>
+			<div className='hideMenu'>
 				<NavLink to='/' className='nav-link'>
 					<p>HOME</p>
 				</NavLink>

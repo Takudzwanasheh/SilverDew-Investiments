@@ -181,6 +181,8 @@
 		.bottom {
 			display: flex;
 			div {
+				display: flex;
+
 				.disapear {
 					display: none;
 				}
@@ -215,7 +217,14 @@
 		.plumb-container .top {
 			display: none;
 		}
-		.bottom,
+		.bottom {
+			display: flex;
+			div {
+				.disapear {
+					display: none;
+				}
+			}
+		}
 		.AboutCompany {
 			flex-direction: column;
 			align-items: stretch;
@@ -246,6 +255,10 @@
 	gap: 1rem;
 	color: wheat;
 	flex-wrap: wrap;
+	div {
+		display: flex;
+		gap: 1rem;
+	}
 
 	.project {
 		border: 1px dotted black;
@@ -275,8 +288,6 @@
 	}
 	@media (max-width: 768px) {
 		flex-direction: column;
-		align-items: stretch;
-		margin-left: 0;
 		padding: 0.5rem;
 		.project {
 			max-width: 100%;

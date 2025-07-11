@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import Detail from "./Detail";
 import DropdownMenu from "../../../Components/navbar/menu";
 import Top from "../building-construction/Top";
+import Projects from "./Projects";
 
 export default function Road() {
 	return (
@@ -34,6 +35,7 @@ export default function Road() {
 				</div>
 			</div>
 			<Detail />
+			<Projects />
 		</div>
 	);
 }
