@@ -1,7 +1,6 @@
 import React from "react";
 import Dropdown from "@mui/joy/Dropdown";
 import Menu from "@mui/joy/Menu";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuButton from "@mui/joy/MenuButton";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import MenuItem from "@mui/joy/MenuItem";

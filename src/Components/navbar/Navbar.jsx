@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
-import MenuIcon from "@mui/icons-material/Menu";
 import silverdale from "../../Asserts/sliverDew.png";
 import DropdownMenu from "./menu";
 import Drop from "./Dropdown";
