@@ -1,12 +1,19 @@
-[build]
-  publish = "dist"
-  command = "npm run build"
+# Node.js
+node_modules/
+npm-debug.log
 
-[dev]
-  command = "npm start"
-  port = 3000
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Java
+*.class
+*.jar
+*.war
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
