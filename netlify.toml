@@ -1,19 +1,8 @@
-# Node.js
-node_modules/
-npm-debug.log
+[build]
+  publish = "build"
+  command = "npm run build"
 
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Java
-*.class
-*.jar
-*.war
-
-# macOS
-.DS_Store
-
-# Visual Studio Code
-.vscode/
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
