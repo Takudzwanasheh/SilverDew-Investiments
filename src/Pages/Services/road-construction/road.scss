@@ -2,25 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	background: rgb(255, 255, 255);
-	.bottom {
-		nav {
-			display: flex;
-			width: 100%;
-			align-items: center;
-			justify-content: center;
-			gap: 2rem;
-			margin-top: 1rem;
-
-			a {
-				font-size: 1.5rem;
-				padding: 0.2rem;
-				margin: 0.2rem;
-				font-weight: bold;
-				text-decoration: none;
-				color: white;
-			}
-		}
-	}
 
 	display: flex;
 	.road-construction {
@@ -110,9 +91,6 @@
 // Responsive styles
 @media (max-width: 1024px) {
 	.container {
-		.bottom nav {
-			display: flex;
-		}
 		.road-construction {
 			height: 12rem;
 			.left h1 {
@@ -155,14 +133,6 @@
 				img {
 					width: 3rem;
 				}
-			}
-		}
-		.bottom nav {
-			display: flex;
-			flex-direction: row;
-			gap: 1rem;
-			a {
-				font-size: 1.1rem;
 			}
 		}
 	}
@@ -213,15 +183,6 @@
 			}
 			.right h1 {
 				font-size: 1rem;
-			}
-		}
-		.bottom nav {
-			gap: 0.5rem;
-			a {
-				font-size: 1rem;
-			}
-			.button {
-				width: 10rem;
 			}
 		}
 	}

@@ -1,27 +1,14 @@
 import React from "react";
 import construct from "../../../Asserts/construction.png";
 import "./plumbing.scss";
-import { NavLink } from "react-router-dom";
 import LastSection from "../../../Components/home-compnents/last-section/LastSection";
-import DropdownMenu from "../../../Components/navbar/menu";
-import Top from "../building-construction/Top";
+import Navtab from "../../../Components/home-compnents/navigation/navtab";
+import Top from "../../../Components/home-compnents/topNavigation/Top";
 export default function Plumbing() {
 	return (
 		<div style={{ background: "grey" }} className='plumb-container'>
 			<Top />
-			<div className='bottom'>
-				<div>
-					<NavLink to='/'>Home</NavLink>
-					<NavLink className='disapear' to='/about'>
-						About
-					</NavLink>
-					<DropdownMenu />
-
-					<NavLink className=' ' to='/contact-us'>
-						Contact Us
-					</NavLink>
-				</div>
-			</div>
+			<Navtab />
 
 			<div className='roadconstructios'>
 				<div className='left'>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.scss";
-import Top from "../../Pages/Services/building-construction/Top";
+import Top from "../../Components/home-compnents/topNavigation/Top";
 
 export default function UpladProjects() {
 	return (

@@ -1,0 +1,50 @@
+.bottom {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	div {
+		margin-left: 1rem;
+		color: wheat;
+		align-items: center;
+		display: flex;
+		gap: 2rem;
+		.button {
+			display: flex;
+			width: fit-contents;
+		}
+		a {
+			color: wheat;
+			text-decoration: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+
+			&:hover {
+				cursor: pointer;
+				color: skyblue;
+			}
+		}
+	}
+	.icon {
+		margin-right: 1rem;
+		color: white !important;
+
+		&:hover {
+			cursor: pointer;
+			color: skyblue !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 450) {
+	.bottom {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			display: none;
+		}
+	}
+}

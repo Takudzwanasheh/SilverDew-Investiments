@@ -1,12 +1,7 @@
 .container {
-	background-image: url("https://www.sbcivils.co.uk/wp-content/uploads/2022/04/What-Is-Highway-Construction-1.jpg");
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	background-repeat: no-repeat;
-	animation: slide 20s infinite;
-	animation-timing-function: ease-in-out;
-	transition: background-image 1s ease-in-out, opacity 2s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -146,6 +141,12 @@
 			display: flex;
 			flex-direction: column;
 			flex: 1;
+			img {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+				transition: all 0.5s;
+			}
 		}
 	}
 	.buttons {
@@ -161,153 +162,54 @@
 			color: wheat;
 		}
 	}
+}
 
-	@keyframes slide {
-		0% {
-			// background-image: url("...");
-		}
-	}
-
-	// Responsive styles
-	@media (max-width: 1200px) {
+@media screen and (max-width: 480px) {
+	.container {
+		width: 100%;
 		.first-section {
-			gap: 1rem;
-			.AboutCompany img {
-				width: 4rem;
-				height: 4rem;
-			}
-			.AboutCompany div h1 {
-				font-size: 1.5rem;
-			}
 			.ContactDetails {
-				display: flex;
-
-				.botto {
+				.bottom {
 					display: flex;
-					.drop {
+					justify-content: space-between;
+					align-items: center;
+					a {
 						display: none;
+						font-size: 14px;
 					}
 				}
 			}
-			.ContactDetails .bottom a {
-				font-size: 1.2rem;
-			}
 		}
-		.text .top h1 {
-			font-size: 3rem;
-		}
-	}
 
-	@media (max-width: 900px) {
-		.first-section {
-			flex-direction: column;
-			align-items: center;
-			gap: 1.5rem;
-		}
 		.text {
+			display: flex;
 			flex-direction: column;
-			margin-left: 0.5rem;
-			.top h1 {
-				font-size: 2.2rem;
-				text-align: left;
-			}
-			.top span {
-				font-size: 1.1rem;
-			}
-		}
-
-		.buttons button {
-			width: 8rem;
-			height: 2.5rem;
-			font-size: 1rem;
-		}
-	}
-
-	@media (max-width: 600px) {
-		padding: 0.5rem;
-		.first-section {
-			padding: 0.5rem;
-			gap: 1rem;
-			.AboutCompany img {
-				width: 3rem;
-				height: 3rem;
-			}
-			.AboutCompany div h1 {
-				font-size: 1rem;
-			}
-			.AboutCompany div span {
-				font-size: 0.9rem;
-			}
-			.ContactDetails .top {
-				flex-direction: column;
-				line-height: 0rem;
-			}
-			.ContactDetails .top div span,
-			.ContactDetails .top p {
-				font-size: 0.9rem;
-			}
-
-			.ContactDetails .bottom {
-				display: flex;
-				width: 100%;
-
-				.drop {
-					display: none;
+			.top {
+				h1 {
+					font-size: 35px;
+					font-weight: bolder;
 				}
-				.contactus {
+				span {
+					font-size: 20px;
+				}
+			}
+			.bottom {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 87%;
+					height: 200px;
+				}
+			}
+		}
+		.buttons {
+			a {
+				margin-bottom: 1rem;
+				button {
 					font-size: 1rem;
 				}
 			}
 		}
-		.text {
-			margin-left: 0;
-			.top h1 {
-				font-size: 1.5rem;
-			}
-			.top span {
-				font-size: 0.9rem;
-			}
-		}
-		.buttons button {
-			width: 10rem;
-			font-size: 0.9rem;
-		}
-	}
-
-	@media (max-width: 400px) {
-		.first-section {
-			padding: 0.2rem;
-			gap: 0.5rem;
-			.AboutCompany img {
-				width: 2rem;
-				height: 2rem;
-			}
-			.AboutCompany div h1,
-			.AboutCompany div span {
-				font-size: 0.7rem;
-			}
-			.ContactDetails .top div span,
-			.ContactDetails .top p {
-				font-size: 0.7rem;
-			}
-			.ContactDetails .bottom a {
-				font-size: 0.8rem;
-			}
-		}
-		.text .top h1 {
-			font-size: 1rem;
-		}
-		.text .top span {
-			font-size: 0.7rem;
-		}
-		.buttons button {
-			width: 4rem;
-			height: 1.5rem;
-			font-size: 0.7rem;
-		}
-	}
-
-	@media (max-width: 360px) {
-		flex-direction: column;
 	}
 }

@@ -10,6 +10,7 @@ import Plumbing from "./Pages/Services/Plumbing/Plumbing";
 import About from "./Pages/about/about/About";
 import UserInfo from "./Pages/ContactDetails/UserInfo";
 import UpladProjects from "./Components/ContactDetails/UserInfo";
+import DamConstruction from "./Pages/Services/Damconstrution/DamConstruction";
 function App() {
 	const [showNavbar, setShowNavbar] = React.useState(false);
 
@@ -36,8 +37,9 @@ function App() {
 				<Route path='/about-us' element={<About />} />
 				<Route path='/contact-us' element={<UserInfo />} />
 				<Route path='/admin' element={<UpladProjects />} />
+				<Route path='/dam-construction' element={<DamConstruction />} />
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</Router>
 	);
 }

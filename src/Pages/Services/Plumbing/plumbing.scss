@@ -1,33 +1,6 @@
 .plumb-container {
 	background: gray;
 
-	.bottom {
-		margin-top: 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 1rem;
-		div {
-			margin-left: 1rem;
-			color: wheat;
-			display: flex;
-			align-items: center;
-			gap: 2rem;
-			a {
-				color: wheat;
-				text-decoration: none;
-				font-size: 1.5rem;
-				cursor: pointer;
-
-				&:hover {
-					cursor: pointer;
-					color: skyblue;
-				}
-			}
-		}
-	}
-
 	.roadconstructios {
 		height: 20rem;
 		display: flex;
@@ -114,26 +87,6 @@
 					font-size: 1.5rem;
 				}
 			}
-			.bottom {
-				margin-left: 1rem;
-				flex: 1;
-				display: flex;
-				flex-direction: column;
-				text-align: left;
-				ul {
-					display: flex;
-					justify-content: left;
-					flex-direction: column;
-					li {
-						margin: 0;
-						padding: 0.5rem;
-						text-align: left;
-						align-items: center;
-						color: white;
-						font-size: 1.5rem;
-					}
-				}
-			}
 		}
 		.road {
 			margin-top: 1rem;
@@ -178,16 +131,6 @@
 		.plumb-container .top {
 			display: none;
 		}
-		.bottom {
-			display: flex;
-			div {
-				display: flex;
-
-				.disapear {
-					display: none;
-				}
-			}
-		}
 
 		.AboutCompany {
 			flex-direction: column;
@@ -217,14 +160,7 @@
 		.plumb-container .top {
 			display: none;
 		}
-		.bottom {
-			display: flex;
-			div {
-				.disapear {
-					display: none;
-				}
-			}
-		}
+
 		.AboutCompany {
 			flex-direction: column;
 			align-items: stretch;

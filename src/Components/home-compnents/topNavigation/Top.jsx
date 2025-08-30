@@ -1,14 +1,14 @@
 import React from "react";
 import MailIcon from "@mui/icons-material/Mail";
 import silverdale from "../../../Asserts/sliverDew.png";
-import "./building.scss";
+import "./top.scss";
 
 export default function Top() {
 	return (
-		<div className='house-container'>
-			<div style={{ gap: "1rem" }} className='top'>
+		<div className='top-container'>
+			<div style={{ gap: "1rem" }} className='top-div'>
 				<div className='contact-info'>
-					<MailIcon />
+					<MailIcon className='icon' />
 					<span>silverdewinvestments@gmail.com</span>
 				</div>
 
@@ -20,7 +20,7 @@ export default function Top() {
 					<span>Safety First Everyday</span>
 				</div>
 			</div>
-			<div style={{ display: "flex" }} className='AboutCompany'>
+			<div className='AboutCompany'>
 				<img src={silverdale} alt='Company Logo' />
 				<div>
 					<h1>SILVER DEW INVESTMENTS</h1>

@@ -3,7 +3,7 @@ import React from "react";
 import "./first.scss";
 import { NavLink } from "react-router-dom";
 import DropdownMenu from "../../navbar/menu";
-import Top from "../../../Pages/Services/building-construction/Top";
+import Top from "../topNavigation/Top";
 export default function FirstSection() {
 	const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -19,7 +19,7 @@ export default function FirstSection() {
 	React.useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-		}, 7000); // Change image every 3 seconds
+		}, 7000);
 		return () => clearInterval(interval);
 	}, [services.length]);
 
@@ -57,12 +57,6 @@ export default function FirstSection() {
 					<img
 						src={services[currentIndex]}
 						alt={`Service ${currentIndex + 1}`}
-						style={{
-							width: "100%",
-							maxWidth: "400px",
-							height: "auto",
-							transition: "all 0.5s",
-						}}
 					/>
 				</div>
 			</div>

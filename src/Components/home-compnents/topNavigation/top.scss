@@ -1,0 +1,96 @@
+.top-container {
+	display: flex;
+	flex-direction: column;
+	background: gray;
+
+	.top-div {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: white;
+		flex-wrap: wrap;
+
+		div {
+			display: flex;
+			align-items: center;
+
+			span {
+				font-size: 1.2rem;
+			}
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		div {
+			display: flex;
+			gap: 0.5rem;
+			.divider {
+				background-color: gold;
+				width: 0.12rem;
+				height: 2rem;
+			}
+			span {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+.AboutCompany {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.3rem;
+	img {
+		width: 5rem;
+		border-radius: 50%;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		color: wheat;
+		h1 {
+			font-size: 1.5rem;
+		}
+		span {
+			text-align: center;
+			margin-top: -0.5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.top-container {
+		padding: 1rem;
+		.top-div {
+			display: flex;
+			.contact-info {
+				flex-direction: row;
+				align-items: center;
+				.icon {
+					display: none;
+				}
+				span {
+					display: none;
+					font-size: 14px;
+					margin-top: 10px;
+					padding: 0.2rem;
+				}
+			}
+			p {
+				display: none;
+			}
+			.safety-message {
+				display: none;
+			}
+		}
+		.AboutCompany {
+			display: flex;
+			img {
+				width: 3rem;
+			}
+			h1 {
+				font-size: 14px;
+			}
+		}
+	}
+}

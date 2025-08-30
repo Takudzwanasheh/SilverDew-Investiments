@@ -1,29 +1,15 @@
 import React from "react";
 import construct from "../../../Asserts/construction.png";
 import "./building.scss";
-import { NavLink } from "react-router-dom";
 import LastSection from "../../../Components/home-compnents/last-section/LastSection";
 import Projects from "./Projects";
-import DropdownMenu from "../../../Components/navbar/menu";
-import Top from "./Top";
-
+import Navtab from "../../../Components/home-compnents/navigation/navtab";
+import Top from "../../../Components/home-compnents/topNavigation/Top";
 export default function Building() {
 	return (
 		<div style={{ background: "grey" }} className='house-container'>
 			<Top />
-
-			<div className='bottom'>
-				<div>
-					<NavLink to='/'>Home</NavLink>
-					<NavLink className='disapear ' to='/about'>
-						About
-					</NavLink>
-					<DropdownMenu />
-					<NavLink className='disapear ' to='/contact-us'>
-						Contact Us
-					</NavLink>
-				</div>
-			</div>
+			<Navtab />
 			<div className='roadconstructios'>
 				<div className='left'>
 					<h1>

@@ -46,19 +46,19 @@ export default function Second() {
 							<img alt='Dam construction' src={dam} />
 						</div>
 						<div className='services'>
-							<img alt='Drive way paving' src={paving} />{" "}
+							<img alt='Drive way paving' src={paving} />
 						</div>
 						<div className='services'>
-							<img alt='Road construction' src={road} />{" "}
+							<img alt='Road construction' src={road} />
 						</div>
 						<div className='services'>
-							<img alt='Dam' src={dams} />{" "}
+							<img alt='Dam' src={dams} />
 						</div>
 						<div className='services'>
-							<img alt='Best Plumbing' src={plumbing} />{" "}
+							<img alt='Best Plumbing' src={plumbing} />
 						</div>
 						<div className='services'>
-							<img alt='Dam' src={dam} />{" "}
+							<img alt='Dam' src={dam} />
 						</div>
 					</div>
 				</div>

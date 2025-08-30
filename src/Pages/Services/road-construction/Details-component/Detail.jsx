@@ -1,6 +1,6 @@
 import React from "react";
-import { servicesData } from "./data";
-import LastSection from "../../../Components/home-compnents/last-section/LastSection";
+import { servicesData } from "../data/data";
+import LastSection from "../../../../Components/home-compnents/last-section/LastSection";
 
 export default function Detail() {
 	return (

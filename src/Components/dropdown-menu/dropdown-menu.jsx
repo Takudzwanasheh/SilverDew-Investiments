@@ -33,12 +33,12 @@ export default function Drop() {
 						</NavLink>
 					</MenuItem>
 					<MenuItem className='MenuItem'>
-						<NavLink className='menu-link' to={"/dam"}>
+						<NavLink className='menu-link' to={"/"}>
 							DAM CONSTRUCTION <ArrowRightIcon />
 						</NavLink>
 					</MenuItem>
 					<MenuItem className='MenuItem'>
-						<NavLink className='menu-link' to={"/warehouse"}>
+						<NavLink className='menu-link' to={"/"}>
 							WAREHOUSES <ArrowRightIcon />
 						</NavLink>
 					</MenuItem>

@@ -3,6 +3,7 @@ import FirstSection from "../../Components/home-compnents/first-section/First-se
 import Second from "../../Components/home-compnents/second-section/Second";
 import "./home.scss";
 import LastSection from "../../Components/home-compnents/last-section/LastSection";
+import Navbar from "../../Components/navbar/Navbar";
 export default function Home() {
 	return (
 		<div className='container'>

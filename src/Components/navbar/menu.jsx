@@ -34,7 +34,7 @@ export default function DropdownMenu() {
 						</NavLink>
 					</MenuItem>
 					<MenuItem className='MenuItem'>
-						<NavLink className='menu-link' to={"/dam"}>
+						<NavLink className='menu-link' to={"/dam-construction"}>
 							DAM CONSTRUCTION <ArrowRightIcon />
 						</NavLink>
 					</MenuItem>
