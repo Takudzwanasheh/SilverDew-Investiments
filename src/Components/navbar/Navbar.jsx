@@ -14,6 +14,7 @@ export default function Navbar() {
 		<div className='navigationbar' ref={navRef}>
 			<div className='CompanyLogos'>
 				<img src={silverdale} alt='Silver Dew Investments' />
+
 				<div>
 					<h1>SILVER DEW INVESTMENTS</h1>
 					<p>(P R I V A T E) L I M I T E D</p>

@@ -5,6 +5,8 @@ $breakpoint-lg: 992px;
 
 .navigationbar {
 	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
 
 	.CompanyLogos {
 		flex-direction: row;
@@ -49,14 +51,17 @@ $breakpoint-lg: 992px;
 		justify-content: flex-end;
 	}
 
-	@media (max-width: $breakpoint-sm) {
-		align-items: flex-start;
-		padding: 10px;
+	@media (max-width: 638px) {
+		width: 100%;
+		overflow: hidden;
 
 		.CompanyLogos {
+			width: 100%;
+			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
 			margin-bottom: 10px;
+			align-items: center;
+			justify-content: space-between;
 			img {
 				display: none;
 			}
@@ -70,9 +75,11 @@ $breakpoint-lg: 992px;
 			.hamburger {
 				display: flex;
 				margin: 1rem;
+				margin-right: 3rem;
 				font-size: 2rem !important;
 			}
 		}
+
 		.mainPages {
 			display: none;
 		}
